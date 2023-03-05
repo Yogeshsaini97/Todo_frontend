@@ -21,6 +21,7 @@ const Todo = () => {
   const [createTask, setCreateTask] = useState("");
   const [completed, setCompleted] = useState(null);
   const [Loading, setLoading] = useState(false);
+  const[text,setText]=useState("")
 
   useEffect(() => {
     //Here we are fetching full List of tasks as soon as page loads
@@ -33,6 +34,12 @@ const Todo = () => {
     let myTasks = await fetchApi("GET", `http://localhost:5000/TodoApp/task`);
  
     setAllTask(myTasks.Data);
+    if(myTasks.message)
+    {
+      setText(`It's time to achieve your Goals, Let's start with your first
+      Task here...`)
+    }
+   
     let CompletedCount = 0;
  //filtering out the tasks according to completed and uncompleted tasks
     if (myTasks.Data) {
@@ -245,8 +252,7 @@ const Todo = () => {
                 })
               ) : (
                 <div className="firstTask">
-                  It's time to achieve your Goals, Let's start with your first
-                  Task here...{" "}
+                  {text}
                 </div>
               )}
             </div>
