@@ -36,18 +36,17 @@
   color: #61dafb;
 }
 
-.css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root
+
+.Textfield label
 {
   color:rgb(252 252 252 / 60%)!important;
+
+
 }
 
-.css-sghohy-MuiButtonBase-root-MuiButton-root {
-  background-color: rgb(98, 86, 192)!important;
-}
-
-
-.css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input
+.Textfield div
 {
+ 
   color:#ffffff!important;
   opacity: 0.8;
 
