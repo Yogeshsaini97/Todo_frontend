@@ -1,16 +1,12 @@
 import React, { useEffect, useState } from "react";
 import "./Todo.css";
 import {
-  Button,
-  DialogActions,
-  DialogContent,
-  DialogContentText,
-  DialogTitle,
+ 
   TextField,
 } from "@mui/material";
 import CheckBoxOutlineBlankIcon from "@mui/icons-material/CheckBoxOutlineBlank";
 
-import { fetchApi, deleteTask } from "../Controller/Controller.jsx";
+import { fetchApi} from "../Controller/Controller.jsx";
 import DeleteForeverIcon from "@mui/icons-material/DeleteForever";
 import CheckIcon from "@mui/icons-material/Check";
 import CheckBoxIcon from "@mui/icons-material/CheckBox";
@@ -99,13 +95,15 @@ const Todo = () => {
       };
     }
 
-    let changedResult = await fetchApi(
+    await fetchApi(
       "PUT",
       `http://localhost:5000/TodoApp/task/update/${id}`,
       payload
     ).then(() => {
       alert(message);
     });
+
+
    
   };
 
