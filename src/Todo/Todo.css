@@ -1,6 +1,6 @@
 .todo
 {
-    height: 80%;
+    height: 65%;
     width: 40%;
 }
 
@@ -100,4 +100,32 @@ height:60%;
     align-items: center;
     font-weight: 900;
     opacity: 0.6;
+}
+.Search-Paper{
+    display: flex;
+    background-color: rgb(98, 86, 192)!important;
+    justify-content: space-between;
+    padding: 0% 1%;
+    width: 84%;
+    height: 8%;
+    /* height: 3rem; */
+    text-align: center;
+    border-radius: 6px!important;
+    margin-left: 6%;
+    box-shadow: none!important;
+    border: 1px solid #000000;
+    color:"black"
+}
+.Search-Icon{
+    color: #000000;
+  }
+  .todo div
+ {
+border-color: #ffffff!important;
+}
+
+.MuiSelect-select
+{
+    background-color: #ffffff!important;
+
 }
