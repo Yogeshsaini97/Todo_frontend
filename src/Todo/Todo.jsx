@@ -162,7 +162,7 @@ const Todo = () => {
       filteredData= await allTask.filter((data)=>
       {
          return data.completed===true;
-          setAllTask(filteredData);
+         
         
   
   
